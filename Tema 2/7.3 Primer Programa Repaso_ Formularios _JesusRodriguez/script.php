@@ -17,8 +17,6 @@
 </style>
 
 <?php
-// Hola, me llamo Jesús Terino
-
 // Ejercicio 1: Contar números pares e impares de una tirada de dados
 
 $rollDiceNumber = rand(1, 10); // Genera entre 1 y 10 dados al azar

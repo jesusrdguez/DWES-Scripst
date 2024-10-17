@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'monaco', 'monospace';
+            background-color: #333333;
+            color: #87CEEB;
+            font-size: 16;
+        }
+
+        h2 {
+            color: rgba(181, 249, 80, 0.909);
+        }
+
+        input,
+        textarea,
+        select {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ejercicio 1</h2>
+    <form action="procesar.php" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required /><br />
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required /><br />
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required /><br />
+        <br>
+        <input type="submit" value="Enviar" />
+    </form>
+    <br>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required /><br />
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required /><br />
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required /><br />
+        <br>
+        <input type="submit" value="Enviar" />
+    </form>
+    <hr>
+    <h2>Ejercicio 2</h2>
+    <form action="datosEj2.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <br>
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario"></textarea><br>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password"><br>
+        <br>
+        <label>Intereses:</label><br>
+        <input type="checkbox" name="intereses" value="Deportes">Deportes<br>
+        <br>
+        <label>Género:</label><br>
+        <input type="radio" name="genero" value="Masculino">Masculino<br>
+        <input type="radio" name="genero" value="Femenino">Femenino<br>
+        <br>
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="España">España</option>
+            <option value="México">México</option>
+        </select><br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>Ejercicio 3</h2>
+    <form action="subir.php" method="post" enctype="multipart/form-data">
+        <label for="archivo">Subir archivo:</label>
+        <input type="file" name="archivo" id="archivo" <br>
+        <br><br>
+        <input type="submit" value="Subir archivo">
+    </form>
+    <hr>
+    <h2>Ejercicio 4</h2>
+    <form action="datosEj4.php" method="post">
+        <input type="submit" name="saludo" value="hola">
+        <br><br>
+        <input type="submit" name="despedida" value="hasta luego">
+        <br>
+    </form>
+    <hr>
+    <h2>Ejercicio 5</h2>
+    <form action="datosEj5.php" mehtod="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" /><br />
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" /><br />
+        <br>
+        <input type="submit" value="Enviar" />
+    </form>
+    <hr>
+    <h2>Ejercicio 6</h2>
+    <form action="datosEj6.php" method="post">
+        <label for="numero">Número: </label>
+        <input type="text" name="numero" /><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>Ejercicio 7</h2>
+    <form action="datosEj7.php" mehtod="get">
+        <label for="texto   ">Número:</label>
+        <input type="text" name="texto"><br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+    <h2>Ejercicio 8</h2>
+    <form action="datosEj8.php" method="post">
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" required>
+        <br><br>
+        <input type="submit" value="Validar">
+    </form>
+    <h2>Ejercicio 9</h2>
+    <form action="datosEj9.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url" required>
+        <br><br>
+        <input type="submit" value="Validar">
+    </form>
+
+</body>
+
+</html>

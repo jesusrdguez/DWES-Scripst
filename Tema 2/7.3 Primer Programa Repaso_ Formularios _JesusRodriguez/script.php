@@ -6,12 +6,12 @@
 
     /* Clase container, define el estilo para los bloques de contenido */
     .container {
-        background-color: #e1eeff; /* Color de fondo */
-        width: fit-content; /* Ajuste automático del ancho */
-        padding: .5em; /* Espaciado interno */
-        border-radius: 10px; /* Bordes redondeados */
-        font-family: Arial, Helvetica, sans-serif; /* Tipografía */
-        margin: 5px; /* Margen externo */
+        background-color: #e1eeff; 
+        width: fit-content; 
+        padding: .5em; 
+        border-radius:9px; 
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 6px;
     }
 
 </style>
@@ -19,7 +19,8 @@
 <?php
 // Ejercicio 1: Contar números pares e impares de una tirada de dados
 
-$rollDiceNumber = rand(1, 10); // Genera entre 1 y 10 dados al azar
+
+$rollDiceNumber = rand(1, 10); 
 $evenNumbers = 0;
 $oddNumbers = 0;
 
@@ -30,19 +31,20 @@ echo "<br>";
 
 // Loop para tirar los dados y contar pares e impares
 for ($i = 0; $i < $rollDiceNumber; $i++) {
-    $numeroAleatorio = rand(1, 6); // Número de cada dado
-    echo "<img src='img/$numeroAleatorio.svg' alt='die'>"; // Imagen del dado
+    $numeroAleatorio = rand(1, 6); 
+    echo "<img src='img/$numeroAleatorio.svg' alt='die'>"; 
     if ($numeroAleatorio % 2 == 0) {
-        $evenNumbers++; // Cuenta pares
+        $evenNumbers++; 
     } else {
-        $oddNumbers++; // Cuenta impares
+        $oddNumbers++; 
     }
 }
+
 echo "<br>";
-echo "Han salido $evenNumbers números pares y $oddNumbers número impar."; // Muestra el resultado
+echo "Han salido $evenNumbers números pares y $oddNumbers número impar.";
 echo "</div>";
 
-echo "<hr>"; // Separador
+echo "<hr>"; 
 
 // Ejercicio 2: Juego del dado más alto
 $firstPlayerDieNumber = rand(1, 6);
@@ -50,10 +52,10 @@ $secondPlayerDieNumber = rand(1, 6);
 
 echo "<h2>Ejercicio 2</h2>";
 echo "<p><b>Jugador 1:</b></p>";
-echo "<img src='img/$firstPlayerDieNumber.svg' alt='die'>";
+echo "<img src='img/$firstPlayerDieNumber.svg' alt='muerto'>";
 echo "<br>";
 echo "<p><b>Jugador 2:</b></p>";
-echo "<img src='img/$secondPlayerDieNumber.svg' alt='die'>";
+echo "<img src='img/$secondPlayerDieNumber.svg' alt='muerto'>";
 
 // Comparación de los dados de los jugadores
 if ($firstPlayerDieNumber > $secondPlayerDieNumber) {
@@ -92,11 +94,11 @@ for ($i = 0; $i < 4; $i++) {
 // Comparación de cada dado
 for ($i = 0; $i < count($playerOne); $i++) {
     if ($playerOne[$i] > $playerTwo[$i]) {
-        $winsPlayerOne++; // Gana Jugador 1
+        $winsPlayerOne++; 
     } else if ($playerTwo[$i] > $playerOne[$i]) {
-        $winsPlayerTwo++; // Gana Jugador 2
+        $winsPlayerTwo++;
     } else {
-        $draws++; // Empate
+        $draws++;
     }
 }
 echo "<br>";

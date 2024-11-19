@@ -1,4 +1,3 @@
-<style>
     /* Estilo para el cuerpo, define tamaño de fuente */
     body {
         font-size: 20px; /* Faltaba px */

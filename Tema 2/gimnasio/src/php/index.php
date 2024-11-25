@@ -6,11 +6,11 @@ session_start();
 <html>
 <head>
     <title>Gimnasio Iron Forge</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo de Iron Forge">
+        <img src="../../assets/img/logo.png" alt="Logo de Iron Forge">
         <h1>Donde se forjan las leyendas</h1>
     </header>
     <nav>

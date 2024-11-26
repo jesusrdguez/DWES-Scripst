@@ -24,7 +24,6 @@ $contenido .= "Asientos seleccionados: " . implode(", ", $asientos_seleccionados
 // Crear y enviar el archivo .txt al navegador
 header('Content-Type: text/plain');
 header('Content-Disposition: attachment; filename="entradas.txt"');
-echo
-    $contenido;
+echo $contenido;
 exit();
 ?>

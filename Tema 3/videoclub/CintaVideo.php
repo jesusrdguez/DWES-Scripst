@@ -12,6 +12,7 @@ class CintaVideo extends Soporte
 
     public function muestraResumen(): void {
         // Mostrar el resumen del soporte base
+        echo "<br>Película en VHS:<br>";
         echo "<br><strong>{$this->titulo}</strong><br>";
         echo "{$this->precio} € (IVA no incluido)<br>";
         echo "Duración: {$this->duracion} minutos";

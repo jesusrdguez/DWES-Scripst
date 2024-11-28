@@ -37,11 +37,11 @@ if (isset($_POST['agregar'])) {
 </head>
 
 <body>
-    
+
     <p style="color: red">PARA AGREGAR UNA PRENDA AL CARRITO HAY QUE PULSAR UNA VEZ EL BOTÓN.
-    NO TE VA A LLEVAR DIRECTAMENTE AL CARRITO, SINO QUE VAS A TENER QUE
-    IR AGREGANDO UNO A UNO LOS PRODUCTO. CUANDO HAYAS AGREGADO TODOS
-    LOS ARTÍCULOS DESEADOS, PULSA EN EL ENLACE DE 'VER CARRITO'</p>
+        NO TE VA A LLEVAR DIRECTAMENTE AL CARRITO, SINO QUE VAS A TENER QUE
+        IR AGREGANDO UNO A UNO LOS PRODUCTO. CUANDO HAYAS AGREGADO TODOS
+        LOS ARTÍCULOS DESEADOS, PULSA EN EL ENLACE DE 'VER CARRITO'</p>
     <h2>¡Bienvenid@ a mi tienda, <?= $nombre_usuario ?>!</h2>
     <h1>Productos</h1>
     <table>
@@ -52,23 +52,22 @@ if (isset($_POST['agregar'])) {
             <th>Agregar</th>
         </tr>
         <?php foreach ($productos as $categoria => $subcategorias): ?>
-        <?php foreach ($subcategorias as $subcategoria => $items): ?>
-
-        <?php foreach ($items as $id => $producto): ?>
-            <tr>
-                <td><?php echo $producto['nombre']; ?></td>
-                <td><?php echo $producto['precio']; ?> €</td>
-                <td>
-                    <form method="post">
-                        <input type="number" name="cantidad" value="1" min="1">
-                        <input type="hidden" name="nombre" value="<?php echo $producto['nombre']; ?>">
-                        <input type="hidden" name="precio" value="<?php echo $producto['precio']; ?>">
-                        <input type="submit" name="agregar" value="Agregar">
-                    </form>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-        <?php endforeach; ?>
+            <?php foreach ($subcategorias as $subcategoria => $items): ?>
+                <?php foreach ($items as $id => $producto): ?>
+                    <tr>
+                        <td><?php echo $producto['nombre']; ?></td>
+                        <td><?php echo $producto['precio']; ?> €</td>
+                        <td>
+                            <form method="post">
+                                <input type="number" name="cantidad" value="1" min="1">
+                                <input type="hidden" name="nombre" value="<?php echo $producto['nombre']; ?>">
+                                <input type="hidden" name="precio" value="<?php echo $producto['precio']; ?>">
+                                <input type="submit" name="agregar" value="Agregar">
+                            </form>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endforeach; ?>
         <?php endforeach; ?>
         <a href="carrito.php">Ver carrito</a>
         <a href="cerrar_sesion.php">Cerrar sesi&oacute;n</a>
